@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlagcolorActivity"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/what_are_the_colors_in_the_indian_national_flag"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/white"
+            android:textSize="14sp"/>
+            <CheckBox
+                android:id="@+id/yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yellow"
+                android:textSize="14sp"
+                />
+            <CheckBox
+                android:id="@+id/orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/orange"
+                android:textSize="14sp"
+                />
+            <CheckBox
+                android:id="@+id/green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/green"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+<Button
+    android:id="@+id/flagnext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/next"
+    android:layout_gravity="end"
+    android:background="@color/purple_500"
+   />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
